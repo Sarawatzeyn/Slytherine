@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="1" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-23T23:07:02 EDT" name="Registration Suite" finished-at="2023-10-23T23:07:23 EDT" duration-ms="21609">
+    <groups>
+      <group name="Sprint3">
+        <method signature="RegistrationTest2.faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@477b4cdf]" name="faizaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest2"/>
+      </group> <!-- Sprint3 -->
+      <group name="Regression">
+        <method signature="RegistrationTest2.faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@477b4cdf]" name="faizaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest2"/>
+        <method signature="RegistrationTest.fabihaRegistrationTest()[pri:1, instance:com.facebook.registrationTests.RegistrationTest@175c2241]" name="fabihaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest"/>
+        <method signature="RegistrationTest.testSkipped()[pri:2, instance:com.facebook.registrationTests.RegistrationTest@175c2241]" name="testSkipped" class="com.facebook.registrationTests.RegistrationTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="RegistrationTest.faruqRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@175c2241]" name="faruqRegistrationTest" class="com.facebook.registrationTests.RegistrationTest"/>
+        <method signature="RegistrationTest2.faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@477b4cdf]" name="faizaRegistrationTest" class="com.facebook.registrationTests.RegistrationTest2"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-10-23T23:07:02 EDT" name="Registration Test" finished-at="2023-10-23T23:07:23 EDT" duration-ms="21609">
+      <class name="com.facebook.registrationTests.RegistrationTest">
+        <test-method is-config="true" signature="openFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@175c2241]" started-at="2023-10-23T23:07:02 EDT" name="openFacebook" finished-at="2023-10-23T23:07:07 EDT" duration-ms="5507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFacebook -->
+        <test-method signature="faruqRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@175c2241]" started-at="2023-10-23T23:07:07 EDT" name="faruqRegistrationTest" finished-at="2023-10-23T23:07:10 EDT" duration-ms="2786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- faruqRegistrationTest -->
+        <test-method is-config="true" signature="closeFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@175c2241]" started-at="2023-10-23T23:07:10 EDT" name="closeFacebook" finished-at="2023-10-23T23:07:10 EDT" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeFacebook -->
+        <test-method is-config="true" signature="openFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@175c2241]" started-at="2023-10-23T23:07:10 EDT" name="openFacebook" finished-at="2023-10-23T23:07:13 EDT" duration-ms="2385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFacebook -->
+        <test-method signature="fabihaRegistrationTest()[pri:1, instance:com.facebook.registrationTests.RegistrationTest@175c2241]" started-at="2023-10-23T23:07:13 EDT" name="fabihaRegistrationTest" finished-at="2023-10-23T23:07:15 EDT" duration-ms="2001" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook - log in or sign up] but found [heelooo]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook - log in or sign up] but found [heelooo]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.facebook.registrationTests.RegistrationTest.fabihaRegistrationTest(RegistrationTest.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fabihaRegistrationTest -->
+        <test-method is-config="true" signature="closeFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@175c2241]" started-at="2023-10-23T23:07:17 EDT" name="closeFacebook" finished-at="2023-10-23T23:07:18 EDT" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeFacebook -->
+        <test-method signature="testSkipped()[pri:2, instance:com.facebook.registrationTests.RegistrationTest@175c2241]" started-at="2023-10-23T23:07:18 EDT" name="testSkipped" finished-at="2023-10-23T23:07:18 EDT" depends-on-methods="com.facebook.registrationTests.RegistrationTest.fabihaRegistrationTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.facebook.registrationTests.RegistrationTest.testSkipped() on instance com.facebook.registrationTests.RegistrationTest@175c2241 depends on not successfully finished methods 
+[com.facebook.registrationTests.RegistrationTest.fabihaRegistrationTest() on instance com.facebook.registrationTests.RegistrationTest@175c2241]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.facebook.registrationTests.RegistrationTest.testSkipped() on instance com.facebook.registrationTests.RegistrationTest@175c2241 depends on not successfully finished methods 
+[com.facebook.registrationTests.RegistrationTest.fabihaRegistrationTest() on instance com.facebook.registrationTests.RegistrationTest@175c2241]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkipped -->
+      </class> <!-- com.facebook.registrationTests.RegistrationTest -->
+      <class name="com.facebook.registrationTests.RegistrationTest2">
+        <test-method is-config="true" signature="openFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@477b4cdf]" started-at="2023-10-23T23:07:18 EDT" name="openFacebook" finished-at="2023-10-23T23:07:20 EDT" duration-ms="2288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFacebook -->
+        <test-method signature="faizaRegistrationTest()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@477b4cdf]" started-at="2023-10-23T23:07:20 EDT" name="faizaRegistrationTest" finished-at="2023-10-23T23:07:20 EDT" duration-ms="432" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+at com.facebook.registrationPages.RegistrationPage.firstNameField(RegistrationPage.java:32)
+at com.facebook.registrationTests.RegistrationTest2.faizaRegistrationTest(RegistrationTest2.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- faizaRegistrationTest -->
+        <test-method is-config="true" signature="closeFacebook()[pri:0, instance:com.facebook.registrationTests.RegistrationTest2@477b4cdf]" started-at="2023-10-23T23:07:23 EDT" name="closeFacebook" finished-at="2023-10-23T23:07:23 EDT" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeFacebook -->
+      </class> <!-- com.facebook.registrationTests.RegistrationTest2 -->
+    </test> <!-- Registration Test -->
+  </suite> <!-- Registration Suite -->
+</testng-results>

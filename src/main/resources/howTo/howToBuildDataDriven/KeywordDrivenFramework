@@ -1,0 +1,40 @@
+step-1
+Create Maven project give proper names to artifactId
+and GroupId
+
+step-2
+update pom xml and update compiler.
+update dependencies add bonagarcia,tesNg,seleniumJava
+apache poi. make sure properties dependencies and plugins are upto date.
+
+step-3
+create and update appropriate class
+src/test/java you have six packages they are
+
+
+step-4
+  build BaseTest with is-a-relationship
+     open browser and application
+     close browser and application
+     take screen shot
+     assertion 
+
+ step-5--a
+ build PropertiesReader in the utilities package and 
+ create method for each key.
+
+ step-5--b
+   build ExcelReader in the utilities package and 
+   import poi dependency from maven repository
+   create method for each data types.
+   build has-a-relationship with test classes.
+
+
+ step-6
+    develop packages for different pages using page object model style of coding
+    use PagePactoryInitElements class if possible
+
+ step-7
+     develop packages for different tests using TestNg model style of coding
+     use BaseTest as a parent test
+     build has-a-relationship with appropriate page

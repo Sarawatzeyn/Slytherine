@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+	<groups>
+		<run>
+			<include name="Regression" />
+		</run>
+	</groups>
+
+	<test name="Test">
+		<classes>
+			<class name="com.facebook.registrationTest.RegistrationTest" />
+			<class name="com.facebook.registrationTest.RegistrationTest2"/>
+			<class name="com.facebook.loginTests.LoginTest" />
+			<class name="com.facebook.loginTests.LoginFunctionalTest" />
+
+		</classes>
+	</test>
+</suite>
+
